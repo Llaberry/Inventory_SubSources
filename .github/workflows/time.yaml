@@ -3,7 +3,8 @@ name: ⌚ TIME
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 23 * * *" #( 11:15 PM UTC 05:00 AM Morning )
+    #- cron: "15 23 * * *" #( 11:15 PM UTC 05:00 AM Morning )
+    - cron: "0 */6 * * *" #Every 6 hrs 
 #------------------------------------------------------------------------------------#
 jobs:
   Initialize:
